@@ -13,14 +13,14 @@ api.sandbox.ebay.com:
 # Trading API - https://www.x.com/developers/ebay/products/trading-api
 api.ebay.com:
     version: 719
-    appid: ENTER_YOUR_APPID_HERE
-    certid: ENTER_YOUR_CERTID_HERE
-    devid: ENTER_YOUR_DEVID_HERE
+    appid: RonaldBa-47d4-4265-94a9-45fad7d3d5b4
+    certid: 5627f08e-7d48-4c2f-a951-e3cfe91b2ceb
+    devid: 445322be-1545-492c-b7ca-91171b03a55d
     token: ENTER_YOUR_TOKEN_HERE
 
 # Finding API - https://www.x.com/developers/ebay/products/finding-api
 svcs.ebay.com:
-    appid: ENTER_YOUR_APPID_HERE
+    appid: RonaldBa-47d4-4265-94a9-45fad7d3d5b4
     version: 1.0.0
 
 # Shopping API - https://www.x.com/developers/ebay/products/shopping-api
