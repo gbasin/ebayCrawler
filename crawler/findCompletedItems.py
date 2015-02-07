@@ -1,3 +1,4 @@
+
 import os
 import sys
 from optparse import OptionParser
@@ -35,26 +36,23 @@ def run(opts):
                       config_file=opts.yaml, warnings=True)
 
         api_request = {
-            #'keywords': u'niño',
-            'keywords': u'Books',
-            'itemFilter': [
-                {'name': 'Condition',
-                 'value': 'Used'},
-                {'name': 'LocatedIn',
-                 'value': 'US'},
-                {'name': 'SoldItemsOnly',
-                 'value': 'true'},
-                {'name': 'MaxPrice',
-                 'paramName': 'Currency',
-                 'paramvalue': 'USD',
-                 'value': '300'},
-                {'name': 'MinPrice',
-                 'paramName': 'Currency',
-                 'paramvalue': 'USD',
-                 'value': '50'}
-            ],
-            'affiliate': {'trackingId': 1},
-            'sortOrder': 'CountryDescending',
+            'keywords': 'Books',
+#             'itemFilter': [
+#                 {'name': 'Condition',
+#                  'value': 'Used'},
+#                 {'name': 'LocatedIn',
+#                  'value': 'US'},
+#                 {'name': 'SoldItemsOnly',
+#                  'value': 'true'},
+#                 {'name': 'MaxPrice',
+#                  'paramName': 'Currency',
+#                  'paramvalue': 'USD',
+#                  'value': '300'},
+#                 {'name': 'MinPrice',
+#                  'paramName': 'Currency',
+#                  'paramvalue': 'USD',
+#                  'value': '50'}
+#             ]
         }
 
         response = api.execute('findCompletedItems', api_request)
@@ -71,7 +69,7 @@ if __name__ == "__main__":
 
 #Category: Books
 #Keywords: Books, Old Books
-#Item Filters: 
+#Item Filters:
 #Condition: Used, New __Yes__
 #Price: 50-400 (Max price, Min Price)
 #Show Only: Sold Listings (findCompletedItems)

@@ -36,8 +36,7 @@ def run(opts):
                       config_file=opts.yaml, warnings=True)
 
         api_request = {
-            #'keywords': u'niño',
-            'keywords': u'GRAMMY Foundation®',
+            'keywords': u'GRAMMY Foundation',
             'itemFilter': [
                 {'name': 'Condition',
                  'value': 'Used'},
@@ -58,10 +57,10 @@ def run(opts):
 def run2(opts):
     try:
         api = finding(debug=opts.debug, appid=opts.appid, config_file=opts.yaml)
-        
-        response = api.execute('findItemsByProduct', 
+
+        response = api.execute('findItemsByProduct',
           '<productId type="ReferenceID">53039031</productId><paginationInput><entriesPerPage>1</entriesPerPage></paginationInput>')
-        
+
         dump(api)
 
     except ConnectionError as e:
