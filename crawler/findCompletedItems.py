@@ -36,23 +36,23 @@ def run(opts):
                       config_file=opts.yaml, warnings=True)
 
         api_request = {
-            'keywords': 'Books',
-#             'itemFilter': [
+             'keywords': 'book',
+             'itemFilter': [
 #                 {'name': 'Condition',
 #                  'value': 'Used'},
 #                 {'name': 'LocatedIn',
 #                  'value': 'US'},
-#                 {'name': 'SoldItemsOnly',
-#                  'value': 'true'},
-#                 {'name': 'MaxPrice',
+                 {'name': 'SoldItemsOnly',
+                  'value': 'true'},
+                 {'name': 'MaxPrice',
 #                  'paramName': 'Currency',
 #                  'paramvalue': 'USD',
-#                  'value': '300'},
-#                 {'name': 'MinPrice',
-#                  'paramName': 'Currency',
-#                  'paramvalue': 'USD',
-#                  'value': '50'}
-#             ]
+                  'value': '2000'},
+                 {'name': 'MinPrice',
+                  #'paramName': 'Currency',
+                  #'paramvalue': 'USD',
+                  'value': '100'}
+             ]
         }
 
         response = api.execute('findCompletedItems', api_request)

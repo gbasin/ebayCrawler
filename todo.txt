@@ -1,0 +1,8 @@
+using a text doc for this until I setup something more useful
+
+1. extract method for getting listings (http://developer.ebay.com/Devzone/finding/CallRef/findCompletedItems.html)
+    a. narrow it by category by specifyin a category ID http://developer.ebay.com/DevZone/shopping/docs/CallRef/GetCategoryInfo.html
+2. loop through list and get single item info (http://developer.ebay.com/Devzone/shopping/docs/CallRef/GetSingleItem.html)
+    a. grab images separately, URLs are included in single item info
+    b. point somewhere to dump raw data
+3. setup a daily run script to do scraping, host it somewhere

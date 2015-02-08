@@ -25,6 +25,6 @@ def dump(api, full=False):
         print("Response Reply: %s" % api.response.reply)
     else:
         dictstr = "%s" % api.response.dict()
-        print("Response dictionary: %s..." % dictstr[:150])
+        print("Response dictionary: %s..." % dictstr[:1500])
         replystr = "%s" % api.response.reply
-        print("Response Reply: %s" % replystr[:150])
+        print("Response Reply: %s" % replystr[:1500])
